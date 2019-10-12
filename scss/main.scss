@@ -1,0 +1,35 @@
+@import 'config';
+@import 'home';
+@import 'menu';
+@import 'footer';
+@import 'resources';
+@import 'werkwoorden';
+
+body {
+    background: $background-color;
+    color: $text-color;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    line-height: 1;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    padding: 1rem;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+}
+
+p {
+    color: $text-color;
+}

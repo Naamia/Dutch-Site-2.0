@@ -1,0 +1,24 @@
+$background-color: rgb(46, 46, 46);
+$link-color: rgb(0, 0, 0);
+$text-color: rgb(223, 223, 223);
+$highlight-color: #FF4D00;
+$minor-text: #9BC3FF;
+$right: #52FF00;
+$wrong: #FF0000;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 5rem;
+}
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}

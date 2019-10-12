@@ -1,0 +1,88 @@
+.werkwoorden-heading {
+    border-bottom: 2px solid $text-color;
+    padding: 0.5rem 0;
+}
+
+.werkwoorden-h1 {
+    color: $text-color;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.werkwoorden-language-heading {
+    color: $highlight-color;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.werkwoorden-h2 {
+    color: $minor-text;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+.questionWrapper {
+    text-align: center;
+}
+
+#question {
+    color: $text-color;
+}
+
+form {
+    text-align: center;
+}
+
+#next {
+    margin: 1rem;
+}
+
+.questionWrapper {
+    min-height: 6rem;
+}
+
+#question {
+    padding: 2rem;
+    border-bottom: 2px solid white;
+}
+
+#answerSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);    
+}
+
+.answerArea {
+    height: 10rem;
+}
+
+.answerArea {
+    margin: 1rem;
+}
+
+.response {
+    padding: 1rem;
+}
+.yes, .no, .correctAns {
+    visibility: hidden;
+
+    &.marked {
+        visibility: visible;
+    }
+    &.reset {
+        visibility: hidden;
+    }
+}
+
+.mark {
+    height: 20px;
+    width: 20px;
+}
+
+.correct {
+    fill: green;
+}
+
+.incorrect {
+    fill: red;
+}

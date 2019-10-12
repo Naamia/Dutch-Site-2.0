@@ -1,0 +1,52 @@
+.home {
+    text-align: left;
+    align-items: center;
+    height: 100%;
+    border-bottom: 2px solid $text-color;
+    width: 21rem;
+    margin: auto auto;
+}
+
+.home-heading {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.home-h2 {
+    color: $minor-text;
+    font-size: 1rem;
+    text-align: left;
+    padding-left: 0.25rem;
+    margin-bottom: -0.5rem;
+    
+}
+
+.home-h1 {
+    color: $text-color;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.language-name {
+    color: $highlight-color;
+    font-size: 2.5rem;
+}
+
+.randomQuote {
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 20px 20px 20px 0px;
+    margin-top: 1rem;
+}
+
+#quoteNd {
+    color: $highlight-color;
+}
+
+#quoteEn {
+    color: $text-color;
+}
+
+#quoteEx {
+    color: $minor-text;
+}

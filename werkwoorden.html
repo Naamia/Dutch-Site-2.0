@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="css/main.css" type="text/css" rel="stylesheet">
+  <title>Verb Practice Form</title>
+</head>
+<body>
+    <header>
+        
+        <div class="menu-btn">
+            <span class="menu-btn_burger"></span>
+        </div>
+        <div class="resources-btn">
+            <span class="resources-btn_img"></span>
+        </div>
+        <nav class="navBar"> 
+            <div class="nav">
+                <ul class="menu-nav">
+                    <li class="menu-nav_item active">
+                    <a href="Index.html" class="menu-nav_link">
+                        Home
+                    </a>
+                </li>
+                    <li class="menu-nav_item">
+                    <a href="Werkwoorden.html" class="menu-nav_link">
+                        Werkwoorden
+                    </a>
+                </li>
+                    <li class="menu-nav_item">
+                    <a href="IrregularPastParticiples.html" class="menu-nav_link">
+                        Irregular Past Participles
+                    </a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="resourceBar">
+            <div class="resources">
+                <ul class="menu-resources">
+                    <li class="menu-resources_item">
+                    <a href="https://translate.google.com/?hl=en&tab=TT" class="menu-resources_link">Google Translate</a>
+                    </li>
+                    <li class="menu-resources_item">
+                    <a href="https://www.omniglot.com/language/tonguetwisters/dutch.htm#dutch" class="menu-resources_link">Dutch Tongue Twisters</a>
+                    </li>
+                    <li class="menu-resources_item">
+                    <a href="https://www.nedbox.be/" class="menu-resources_link">Ned Box</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+  <div id="werkwoordenBody">
+    <script src="js/werkwoordenTest.js"></script>
+    <script src="js/antwoordenTest.js"></script>
+    <script src="js/main.js"></script>
+
+<div id=formContainer>
+
+
+<div class="werkwoorden-heading">
+<h1 class="werkwoorden-language-heading">Nederlands <span class="werkwoorden-h1">Leren</span></h1>
+</div>
+<form id=form>
+<section id="questionArea">
+    <h2 class="werkwoorden-h2">Vul de ontbrekende tijden van het werkwoord in</h2>
+    <h2 class="werkwoorden-h2">Fill in the missing tenses of the verb</h2>
+    </section>
+  <div class="questionWrapper">
+  <a onclick="searchVD();"><p id="question" class="formRect area" onclick="searchVD();"></p></a>
+  <p class="notes"></p>
+  </div>
+  <input type="button" id="next" class="formButton" value="Start" onclick="nextQ(), allClear()" display="block">
+</section><br>
+
+<section id="answerSection">
+  <div id="answer1" class="answerArea">
+    <label id="answerP1" class="answerHead">Ik</label><br>
+    <input type="text" id="answerInp1" class="answers area" placeholder="answer goes here" value="">
+    <!--<a onclick="searchVD();">search</a>-->
+    <div class="response">
+    <div id="yes1"  class="yes" name="yes">
+      <svg class="correct mark" viewBox="0 -65 434.67733 434" xmlns="http://www.w3.org/2000/svg"><path  d="m152.003906 304.34375c-5.460937 0-10.921875-2.089844-15.082031-6.25l-130.664063-130.667969c-8.34375-8.339843-8.34375-21.824219 0-30.164062 8.339844-8.339844 21.820313-8.339844 30.164063 0l115.582031 115.582031 246.253906-246.25c8.339844-8.339844 21.820313-8.339844 30.164063 0 8.339844 8.34375 8.339844 21.824219 0 30.167969l-261.332031 261.332031c-4.160156 4.160156-9.625 6.25-15.085938 6.25zm0 0"/></svg>
+        </div>
+    <div id="no1" class="no">
+    <svg class="incorrect mark" viewBox="0 0 329.26933 329" xmlns="http://www.w3.org/2000/svg"><g><path d="m21.339844 329.398438c-5.460938 0-10.925782-2.089844-15.082032-6.25-8.34375-8.339844-8.34375-21.824219 0-30.164063l286.589844-286.59375c8.339844-8.339844 21.824219-8.339844 30.164063 0 8.34375 8.339844 8.34375 21.824219 0 30.164063l-286.589844 286.59375c-4.183594 4.179687-9.621094 6.25-15.082031 6.25zm0 0"/><path d="m307.929688 329.398438c-5.460938 0-10.921876-2.089844-15.082032-6.25l-286.589844-286.59375c-8.34375-8.339844-8.34375-21.824219 0-30.164063 8.339844-8.339844 21.820313-8.339844 30.164063 0l286.589844 286.59375c8.34375 8.339844 8.34375 21.824219 0 30.164063-4.160157 4.179687-9.621094 6.25-15.082031 6.25zm0 0"/></g></svg>
+    <div class="correctAns" id="correctAns1"></div>    
+</div>
+    
+    <div id="error1" style="display: none">Error</div>
+    <div id="fault1" style="display: none">Fault</div>
+  </div>
+</div>
+
+  <div id="answer2" class="answerArea">
+    <label id="answerP2" class="answerHead">Jij/Je</label><br>
+    <input type="text" id="answerInp2" class="answers area" placeholder="answer goes here">
+    
+    <div class="response">
+    <div id="yes2" style="display: none" class="yes">
+      <svg class="correct mark" viewBox="0 -65 434.67733 434" xmlns="http://www.w3.org/2000/svg"><path  d="m152.003906 304.34375c-5.460937 0-10.921875-2.089844-15.082031-6.25l-130.664063-130.667969c-8.34375-8.339843-8.34375-21.824219 0-30.164062 8.339844-8.339844 21.820313-8.339844 30.164063 0l115.582031 115.582031 246.253906-246.25c8.339844-8.339844 21.820313-8.339844 30.164063 0 8.339844 8.34375 8.339844 21.824219 0 30.167969l-261.332031 261.332031c-4.160156 4.160156-9.625 6.25-15.085938 6.25zm0 0"/></svg>
+    </div>
+    <div id="no2" style="display: none" class="no">
+      <svg class="incorrect mark" viewBox="0 0 329.26933 329" xmlns="http://www.w3.org/2000/svg"><g><path d="m21.339844 329.398438c-5.460938 0-10.925782-2.089844-15.082032-6.25-8.34375-8.339844-8.34375-21.824219 0-30.164063l286.589844-286.59375c8.339844-8.339844 21.824219-8.339844 30.164063 0 8.34375 8.339844 8.34375 21.824219 0 30.164063l-286.589844 286.59375c-4.183594 4.179687-9.621094 6.25-15.082031 6.25zm0 0"/><path d="m307.929688 329.398438c-5.460938 0-10.921876-2.089844-15.082032-6.25l-286.589844-286.59375c-8.34375-8.339844-8.34375-21.824219 0-30.164063 8.339844-8.339844 21.820313-8.339844 30.164063 0l286.589844 286.59375c8.34375 8.339844 8.34375 21.824219 0 30.164063-4.160157 4.179687-9.621094 6.25-15.082031 6.25zm0 0"/></g></svg>
+      <div class="correctAns" id="correctAns2" style="display: none"></div>    
+    </div>
+    <div id="error2" style="display: none">Error</div>
+    <div id="fault2" style="display: none">Fault</div>
+  </div></div>
+
+  <div id="answers3" class="answerArea" >
+    <label id="answerP3" class="answerHead">Hij/Zij/Het</label><br>
+    <input type="text" id="answerInp3" class="answers area" placeholder="answer goes here">
+
+    <div class="response">
+    <div id="yes3" style="display: none" class="yes">
+      <svg class="correct mark" viewBox="0 -65 434.67733 434" xmlns="http://www.w3.org/2000/svg"><path  d="m152.003906 304.34375c-5.460937 0-10.921875-2.089844-15.082031-6.25l-130.664063-130.667969c-8.34375-8.339843-8.34375-21.824219 0-30.164062 8.339844-8.339844 21.820313-8.339844 30.164063 0l115.582031 115.582031 246.253906-246.25c8.339844-8.339844 21.820313-8.339844 30.164063 0 8.339844 8.34375 8.339844 21.824219 0 30.167969l-261.332031 261.332031c-4.160156 4.160156-9.625 6.25-15.085938 6.25zm0 0"/></svg>
+    </div>
+    <div id="no3" style="display: none" class="no">
+      <svg class="incorrect mark" viewBox="0 0 329.26933 329" xmlns="http://www.w3.org/2000/svg"><g><path d="m21.339844 329.398438c-5.460938 0-10.925782-2.089844-15.082032-6.25-8.34375-8.339844-8.34375-21.824219 0-30.164063l286.589844-286.59375c8.339844-8.339844 21.824219-8.339844 30.164063 0 8.34375 8.339844 8.34375 21.824219 0 30.164063l-286.589844 286.59375c-4.183594 4.179687-9.621094 6.25-15.082031 6.25zm0 0"/><path d="m307.929688 329.398438c-5.460938 0-10.921876-2.089844-15.082032-6.25l-286.589844-286.59375c-8.34375-8.339844-8.34375-21.824219 0-30.164063 8.339844-8.339844 21.820313-8.339844 30.164063 0l286.589844 286.59375c8.34375 8.339844 8.34375 21.824219 0 30.164063-4.160157 4.179687-9.621094 6.25-15.082031 6.25zm0 0"/></g></svg>
+      <div class="correctAns" id="correctAns3" style="display: none"></div>    
+    </div>
+    <div id="error3" style="display: none">Error</div>
+    <div id="fault3" style="display: none">Fault</div>
+  </div> </div>
+
+  <div id="answers4" class="answerArea">
+    <label id="answersP4" class="answerHead">Wij/We</label><br>
+    <input type="text" id="answerInp4" class="answers area" placeholder="answer goes here">
+
+    <div class="response">
+    <div id="yes4" style="display: none" class="yes">
+      <svg class="correct mark" viewBox="0 -65 434.67733 434" xmlns="http://www.w3.org/2000/svg"><path  d="m152.003906 304.34375c-5.460937 0-10.921875-2.089844-15.082031-6.25l-130.664063-130.667969c-8.34375-8.339843-8.34375-21.824219 0-30.164062 8.339844-8.339844 21.820313-8.339844 30.164063 0l115.582031 115.582031 246.253906-246.25c8.339844-8.339844 21.820313-8.339844 30.164063 0 8.339844 8.34375 8.339844 21.824219 0 30.167969l-261.332031 261.332031c-4.160156 4.160156-9.625 6.25-15.085938 6.25zm0 0"/></svg>
+    </div>
+    <div id="no4" style="display: none" class="no">
+      <svg class="incorrect mark" viewBox="0 0 329.26933 329" xmlns="http://www.w3.org/2000/svg"><g><path d="m21.339844 329.398438c-5.460938 0-10.925782-2.089844-15.082032-6.25-8.34375-8.339844-8.34375-21.824219 0-30.164063l286.589844-286.59375c8.339844-8.339844 21.824219-8.339844 30.164063 0 8.34375 8.339844 8.34375 21.824219 0 30.164063l-286.589844 286.59375c-4.183594 4.179687-9.621094 6.25-15.082031 6.25zm0 0"/><path d="m307.929688 329.398438c-5.460938 0-10.921876-2.089844-15.082032-6.25l-286.589844-286.59375c-8.34375-8.339844-8.34375-21.824219 0-30.164063 8.339844-8.339844 21.820313-8.339844 30.164063 0l286.589844 286.59375c8.34375 8.339844 8.34375 21.824219 0 30.164063-4.160157 4.179687-9.621094 6.25-15.082031 6.25zm0 0"/></g></svg>
+      <div class="correctAns" id="correctAns4" style="display: none"></div>    
+    </div>
+    <div id="error4" style="display: none">Error</div>
+    <div id="fault4" style="display: none">Fault</div>
+  </div></div>
+
+  <div id="answers5" class="answerArea">
+    <label id="answerP5" class="answerHead">Jullie</label><br>
+    <input type="text" id="answerInp5" class="answers area" placeholder="answer goes here">
+
+    <div class="response">
+    <div id="yes5" style="display: none" name="responseYN" class="yes">
+      <svg class="correct mark" viewBox="0 -65 434.67733 434" xmlns="http://www.w3.org/2000/svg"><path  d="m152.003906 304.34375c-5.460937 0-10.921875-2.089844-15.082031-6.25l-130.664063-130.667969c-8.34375-8.339843-8.34375-21.824219 0-30.164062 8.339844-8.339844 21.820313-8.339844 30.164063 0l115.582031 115.582031 246.253906-246.25c8.339844-8.339844 21.820313-8.339844 30.164063 0 8.339844 8.34375 8.339844 21.824219 0 30.167969l-261.332031 261.332031c-4.160156 4.160156-9.625 6.25-15.085938 6.25zm0 0"/></svg>
+    </div>
+    <div id="no5" style="display: none" name="responseYN" class="no">
+      <svg class="incorrect mark" viewBox="0 0 329.26933 329" xmlns="http://www.w3.org/2000/svg"><g><path d="m21.339844 329.398438c-5.460938 0-10.925782-2.089844-15.082032-6.25-8.34375-8.339844-8.34375-21.824219 0-30.164063l286.589844-286.59375c8.339844-8.339844 21.824219-8.339844 30.164063 0 8.34375 8.339844 8.34375 21.824219 0 30.164063l-286.589844 286.59375c-4.183594 4.179687-9.621094 6.25-15.082031 6.25zm0 0"/><path d="m307.929688 329.398438c-5.460938 0-10.921876-2.089844-15.082032-6.25l-286.589844-286.59375c-8.34375-8.339844-8.34375-21.824219 0-30.164063 8.339844-8.339844 21.820313-8.339844 30.164063 0l286.589844 286.59375c8.34375 8.339844 8.34375 21.824219 0 30.164063-4.160157 4.179687-9.621094 6.25-15.082031 6.25zm0 0"/></g></svg>
+      <div class="correctAns" id="correctAns5" style="display: none"></div>    
+    </div>
+    <div id="error5" style="display: none">Error</div>
+    <div id="fault5" style="display: none">Fault</div>
+  </div></div>
+
+  <div id="answers6" class="answerArea">
+    <label id="answersP6" class="answerHead">Zij</label><br>
+    <input type="text" id="answerInp6" class="answers area" placeholder="answer goes here">
+
+    <div class="response">
+    <div id="yes6" style="display: none" name="responseYN" class="yes">
+      <svg class="correct mark" viewBox="0 -65 434.67733 434" xmlns="http://www.w3.org/2000/svg"><path  d="m152.003906 304.34375c-5.460937 0-10.921875-2.089844-15.082031-6.25l-130.664063-130.667969c-8.34375-8.339843-8.34375-21.824219 0-30.164062 8.339844-8.339844 21.820313-8.339844 30.164063 0l115.582031 115.582031 246.253906-246.25c8.339844-8.339844 21.820313-8.339844 30.164063 0 8.339844 8.34375 8.339844 21.824219 0 30.167969l-261.332031 261.332031c-4.160156 4.160156-9.625 6.25-15.085938 6.25zm0 0"/></svg>
+    </div>
+    <div id="no6" style="display: none" name="responseYN" class="no">
+      <svg class="incorrect mark" viewBox="0 0 329.26933 329" xmlns="http://www.w3.org/2000/svg"><g><path d="m21.339844 329.398438c-5.460938 0-10.925782-2.089844-15.082032-6.25-8.34375-8.339844-8.34375-21.824219 0-30.164063l286.589844-286.59375c8.339844-8.339844 21.824219-8.339844 30.164063 0 8.34375 8.339844 8.34375 21.824219 0 30.164063l-286.589844 286.59375c-4.183594 4.179687-9.621094 6.25-15.082031 6.25zm0 0"/><path d="m307.929688 329.398438c-5.460938 0-10.921876-2.089844-15.082032-6.25l-286.589844-286.59375c-8.34375-8.339844-8.34375-21.824219 0-30.164063 8.339844-8.339844 21.820313-8.339844 30.164063 0l286.589844 286.59375c8.34375 8.339844 8.34375 21.824219 0 30.164063-4.160157 4.179687-9.621094 6.25-15.082031 6.25zm0 0"/></g></svg>
+      <div class="correctAns" id="correctAns6" style="display: none"></div>    
+    </div>
+    <div id="error6" style="display: none">Error</div>
+    <div id="fault6" style="display: none">Fault</div>
+  </div></div><br>
+</section>
+
+
+<input type="button" value="Submit" class="formButton" onclick="testDutch()"><input type="reset" class="formButton" onclick="allClear()">
+<div id="scoreboard"></div>
+<div id="end"></div>
+</form>
+
+</div>
+</div>
+<footer>&copy; Copyright 2019</footer>
+</body>
+</html>
